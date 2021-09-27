@@ -1,5 +1,9 @@
+import Head from 'next/head'
+import Link from 'next/link'
 import { Box, Image, Text, Flex, Button } from '@chakra-ui/react'
-import { StarIcon } from '@chakra-ui/icons'
+
+//components
+import { CryptoContainer } from '../components/CryptoContainer'
 
 export default function Home() {
   return (
@@ -14,10 +18,13 @@ export default function Home() {
       backgroundPosition='center'
       zIndex='0'
     >
+      <Head>
+        <title>INBOX</title>
+      </Head>
       <Box
         position='absolute'
         maxW='40rem'
-        top={['45%', '50%']}
+        top={['30%', '40%']}
         transform='translateY(-50%)'
         padding='0 2rem'
         marginLeft={['0', '0', '4rem']}
@@ -32,26 +39,25 @@ export default function Home() {
           youtubers do Brasil
         </Text>
       </Box>
-      <Flex 
-        w='100vw' 
-        align='center' 
-        justify='center' 
+      <Flex
+        w='100vw'
+        align='center'
+        justify='center'
         padding='2rem'
-        flexDirection={['column', 'row']}
+        flexDirection='column'
       >
-        <Text>
-          Fique por dentro de tudo no mundo das crypto moedas, com os melhores
-          youtubers do Brasil
-        </Text>
-        <Button
-          marginLeft={['none', '2rem']}
-          justifySelf='flex-end'
-          colorScheme='pink'
-          padding='1rem'
-          width={['80vw', 'auto']}
-        >
-          Forum
-        </Button>
+        <CryptoContainer cryptoBackgroundColor='none'/>
+        <Link href='/forum'>
+          <Button
+            marginLeft={['none', '2rem']}
+            alignSelf='flex-end'
+            colorScheme='pink'
+            padding='1rem'
+            width={['80vw', 'auto']}
+          >
+            Forum
+          </Button>
+        </Link>
       </Flex>
 
       <Flex
