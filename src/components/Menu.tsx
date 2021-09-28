@@ -13,12 +13,12 @@ export function Menu() {
         padding='1rem'
       >
         <Box>
-          <Link href='/forum'>
+          <Link href='/forum' passHref>
             <Button bg='gray.800' _hover={{ color: 'green.400' }}>
               Mineração
             </Button>
           </Link>
-          <Link href='/forum'>
+          <Link href='/forum' passHref>
             <Button
               marginLeft='1rem'
               bg='gray.800'
@@ -27,7 +27,7 @@ export function Menu() {
               Trader
             </Button>
           </Link>
-          <Link href='/forum'>
+          <Link href='/forum' passHref>
             <Button
               marginLeft='1rem'
               bg='gray.800'
@@ -38,12 +38,12 @@ export function Menu() {
           </Link>
         </Box>
         <Box>
-          <Link href='/courses'>
+          <Link href='/courses' passHref>
             <Button bg='gray.800' _hover={{ color: 'red.400' }}>
               Coversor
             </Button>
-          </Link>
-          <Link href='/courses'>
+          </Link> 
+          <Link href='/courses' passHref>
             <Button bg='gray.800' _hover={{ color: 'red.400' }}>
               Cursos
             </Button>

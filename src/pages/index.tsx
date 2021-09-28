@@ -47,7 +47,7 @@ export default function Home() {
         padding='0 2rem'
         flexDirection='column'
       >
-        <Link href='/forum'>
+        <Link href='/forum' passHref>
           <Button
             marginLeft={['none', '2rem']}
             alignSelf='flex-end'
