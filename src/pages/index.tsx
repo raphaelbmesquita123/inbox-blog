@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { Box, Image, Text, Flex, Button } from '@chakra-ui/react'
 
 //components
-import { CryptoContainer } from '../components/CryptoContainer'
 import { CoingeckoWidget } from '../components/CoingeckoWidget'
 
 export default function Home() {

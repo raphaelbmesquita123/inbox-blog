@@ -18,7 +18,7 @@ export function Header() {
         padding='0 2rem'
         margin='0 auto'
       >
-        <Link href='/'>
+        <Link href='/' passHref>
           <Image h='2rem' src='./logo.png' alt='inbox logo' cursor='pointer'/>
         </Link>
         <Text fontSize='1rem'>Forum</Text>

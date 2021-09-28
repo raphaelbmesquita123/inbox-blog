@@ -36,7 +36,7 @@ export function Content({ Url, Title, Author, TextContent }: ContentProps) {
         border='2px solid'
         borderColor='green.400'
       />
-      <Link href='/forum'>
+      <Link href='/forum' passHref>
         <Flex flexDirection='column' marginLeft={['0', '1rem', '1rem']} cursor='pointer'>
           <Stack spacing='0.5rem'>
             <Text fontSize={['1rem', '1rem', '1.5rem']} color='green.400'>
