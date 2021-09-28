@@ -9,7 +9,8 @@ export default function Home() {
   return (
     <Flex
       position='relative'
-      align='flex-end'
+      flexDirection={['column', 'column-reverse']}
+      justify={['space-between', 'flex-start']}
       w='100vw'
       h='100vh'
       backgroundImage='url(./image.png)'
@@ -24,7 +25,7 @@ export default function Home() {
       <Box
         position='absolute'
         maxW='40rem'
-        top={['40%', '50%']}
+        top='50%'
         transform='translateY(-50%)'
         padding='0 2rem'
         marginLeft={['0', '0', '4rem']}
@@ -39,6 +40,9 @@ export default function Home() {
           youtubers do Brasil
         </Text>
       </Box>
+
+      <CoingeckoWidget />
+
       <Flex
         w='100vw'
         align='center'
@@ -58,7 +62,6 @@ export default function Home() {
             Forum
           </Button>
         </Link>
-        <CoingeckoWidget />
       </Flex>
 
       <Flex
