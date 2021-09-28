@@ -6,7 +6,7 @@ export function Header() {
   return (
     <Box
       w='100vw'
-      h='8rem'
+      h='4rem'
       bg='linear-gradient(29deg, rgba(97,0,119,1) 0%, rgba(116,0,127,1) 28%, rgba(166,0,131,1) 68%, rgba(226,0,173,1) 94%);'
     >
       <Flex
@@ -19,7 +19,7 @@ export function Header() {
         margin='0 auto'
       >
         <Link href='/'>
-          <Image h={['2rem', '3rem', '4rem']} src='./logo.png' alt='inbox logo' cursor='pointer'/>
+          <Image h='2rem' src='./logo.png' alt='inbox logo' cursor='pointer'/>
         </Link>
         <Text fontSize='1rem'>Forum</Text>
       </Flex>

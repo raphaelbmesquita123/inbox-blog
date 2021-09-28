@@ -14,22 +14,41 @@ export function Menu() {
       >
         <Box>
           <Link href='/forum'>
-            <Button bg='gray.800' _hover={{ color: 'green.400'}}>Mineração</Button>
+            <Button bg='gray.800' _hover={{ color: 'green.400' }}>
+              Mineração
+            </Button>
           </Link>
           <Link href='/forum'>
-            <Button marginLeft='1rem' bg='gray.800' _hover={{ color: 'orange.400'}}>
+            <Button
+              marginLeft='1rem'
+              bg='gray.800'
+              _hover={{ color: 'orange.400' }}
+            >
               Trader
             </Button>
           </Link>
           <Link href='/forum'>
-            <Button marginLeft='1rem' bg='gray.800' _hover={{ color: 'blue.400'}}>
+            <Button
+              marginLeft='1rem'
+              bg='gray.800'
+              _hover={{ color: 'blue.400' }}
+            >
               IQ Option
             </Button>
           </Link>
         </Box>
-        <Link href='/courses'>
-          <Button bg='gray.800' _hover={{ color: 'red.400'}}>Cursos</Button>
-        </Link>
+        <Box>
+          <Link href='/courses'>
+            <Button bg='gray.800' _hover={{ color: 'red.400' }}>
+              Coversor
+            </Button>
+          </Link>
+          <Link href='/courses'>
+            <Button bg='gray.800' _hover={{ color: 'red.400' }}>
+              Cursos
+            </Button>
+          </Link>
+        </Box>
       </Flex>
     </Box>
   )

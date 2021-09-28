@@ -1,5 +1,5 @@
 import React from 'react'
-import { Image, Box } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 
 interface PriceActionProps {
   src: string

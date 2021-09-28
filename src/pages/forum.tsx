@@ -6,15 +6,15 @@ import { Header } from '../components/Header'
 import { PriceAction } from '../components/PriceAction'
 import { Menu } from '../components/Menu'
 import { Content } from '../components/Content'
+import { CoingeckoWidget } from '../components/CoingeckoWidget'
 
-import { CryptoContainer } from '../components/CryptoContainer'
 
 export default function Forum() {
   return (
     <Flex flexDirection='column'>
       <Header></Header>
       <PriceAction src='./gilvanYoutube.png'></PriceAction>
-      <CryptoContainer cryptoBackgroundColor='gray.800'/>
+      < CoingeckoWidget />
       <Menu />
       <Content
         Url='https://avatars.githubusercontent.com/u/75806678?s=96&v=4'

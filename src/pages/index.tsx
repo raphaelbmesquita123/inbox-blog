@@ -4,6 +4,7 @@ import { Box, Image, Text, Flex, Button } from '@chakra-ui/react'
 
 //components
 import { CryptoContainer } from '../components/CryptoContainer'
+import { CoingeckoWidget } from '../components/CoingeckoWidget'
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
       <Box
         position='absolute'
         maxW='40rem'
-        top={['30%', '40%']}
+        top={['40%', '50%']}
         transform='translateY(-50%)'
         padding='0 2rem'
         marginLeft={['0', '0', '4rem']}
@@ -43,10 +44,9 @@ export default function Home() {
         w='100vw'
         align='center'
         justify='center'
-        padding='2rem'
+        padding='0 2rem'
         flexDirection='column'
       >
-        <CryptoContainer cryptoBackgroundColor='none'/>
         <Link href='/forum'>
           <Button
             marginLeft={['none', '2rem']}
@@ -54,10 +54,12 @@ export default function Home() {
             colorScheme='pink'
             padding='1rem'
             width={['80vw', 'auto']}
+            marginBottom='2rem'
           >
             Forum
           </Button>
         </Link>
+        <CoingeckoWidget />
       </Flex>
 
       <Flex
