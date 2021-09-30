@@ -1,11 +1,11 @@
 import React from 'react'
 import { Box } from '@chakra-ui/react'
 
-interface PriceActionProps {
+interface BannerProps {
   src: string
 }
 
-export function PriceAction({ src }: PriceActionProps) {
+export function Banner({ src }: BannerProps) {
   return (
     <Box
         h='8rem'

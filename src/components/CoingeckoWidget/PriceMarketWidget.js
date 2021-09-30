@@ -3,7 +3,7 @@ import { Box } from '@chakra-ui/react'
 import Script from 'next/script'
 
 
-export function CoingeckoWidget (){
+export function PriceMarketWidget (){
   return (
     <Box
     w='100vw'>

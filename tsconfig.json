@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/components/CoingeckoWidget/index.js"  ],
+, "src/components/CoingeckoWidget/PriceMarketWidget.js"  ],
   "exclude": [
     "node_modules"
   ]
